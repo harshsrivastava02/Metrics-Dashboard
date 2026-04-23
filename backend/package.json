@@ -1,0 +1,15 @@
+{
+  "name": "dev-metrics-backend",
+  "version": "1.0.0",
+  "description": "Backend for Developer Metrics MVP",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
