@@ -1,25 +1,730 @@
 {
   "deployments": [
-    {"id": "d1", "timestamp": "2023-10-02T10:00:00Z", "status": "success"},
-    {"id": "d2", "timestamp": "2023-10-08T15:00:00Z", "status": "success"},
-    {"id": "d3", "timestamp": "2023-10-15T09:00:00Z", "status": "success"},
-    {"id": "d4", "timestamp": "2023-10-22T14:00:00Z", "status": "success"}
+    {
+      "id": "d1",
+      "developer": "Harsh",
+      "timestamp": "2023-09-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d2",
+      "developer": "Harsh",
+      "timestamp": "2023-09-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d3",
+      "developer": "Harsh",
+      "timestamp": "2023-09-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d4",
+      "developer": "Harsh",
+      "timestamp": "2023-10-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d5",
+      "developer": "Harsh",
+      "timestamp": "2023-10-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d6",
+      "developer": "Harsh",
+      "timestamp": "2023-10-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d7",
+      "developer": "Harsh",
+      "timestamp": "2023-11-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d8",
+      "developer": "Harsh",
+      "timestamp": "2023-11-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d9",
+      "developer": "Harsh",
+      "timestamp": "2023-11-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d10",
+      "developer": "Alex",
+      "timestamp": "2023-09-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d11",
+      "developer": "Alex",
+      "timestamp": "2023-09-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d12",
+      "developer": "Alex",
+      "timestamp": "2023-09-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d13",
+      "developer": "Alex",
+      "timestamp": "2023-10-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d14",
+      "developer": "Alex",
+      "timestamp": "2023-10-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d15",
+      "developer": "Alex",
+      "timestamp": "2023-10-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d16",
+      "developer": "Alex",
+      "timestamp": "2023-11-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d17",
+      "developer": "Alex",
+      "timestamp": "2023-11-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d18",
+      "developer": "Alex",
+      "timestamp": "2023-11-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d19",
+      "developer": "Sam",
+      "timestamp": "2023-09-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d20",
+      "developer": "Sam",
+      "timestamp": "2023-09-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d21",
+      "developer": "Sam",
+      "timestamp": "2023-09-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d22",
+      "developer": "Sam",
+      "timestamp": "2023-10-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d23",
+      "developer": "Sam",
+      "timestamp": "2023-10-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d24",
+      "developer": "Sam",
+      "timestamp": "2023-10-24T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d25",
+      "developer": "Sam",
+      "timestamp": "2023-11-08T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d26",
+      "developer": "Sam",
+      "timestamp": "2023-11-16T10:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "d27",
+      "developer": "Sam",
+      "timestamp": "2023-11-24T10:00:00Z",
+      "status": "success"
+    }
   ],
   "prs": [
-    {"id": "pr1", "openedAt": "2023-09-30T09:00:00Z", "mergedAt": "2023-10-01T14:00:00Z", "deployedAt": "2023-10-02T10:00:00Z"},
-    {"id": "pr2", "openedAt": "2023-10-05T10:00:00Z", "mergedAt": "2023-10-07T11:00:00Z", "deployedAt": "2023-10-08T15:00:00Z"},
-    {"id": "pr3", "openedAt": "2023-10-12T08:00:00Z", "mergedAt": "2023-10-14T09:00:00Z", "deployedAt": "2023-10-15T09:00:00Z"},
-    {"id": "pr4", "openedAt": "2023-10-18T13:00:00Z", "mergedAt": "2023-10-20T10:00:00Z", "deployedAt": "2023-10-22T14:00:00Z"},
-    {"id": "pr5", "openedAt": "2023-10-25T09:00:00Z", "mergedAt": "2023-10-26T12:00:00Z", "deployedAt": null}
+    {
+      "id": "pr1",
+      "developer": "Harsh",
+      "openedAt": "2023-09-05T09:00:00Z",
+      "mergedAt": "2023-09-06T14:00:00Z",
+      "deployedAt": "2023-09-07T10:00:00Z"
+    },
+    {
+      "id": "pr2",
+      "developer": "Harsh",
+      "openedAt": "2023-09-10T09:00:00Z",
+      "mergedAt": "2023-09-11T14:00:00Z",
+      "deployedAt": "2023-09-12T10:00:00Z"
+    },
+    {
+      "id": "pr3",
+      "developer": "Harsh",
+      "openedAt": "2023-09-15T09:00:00Z",
+      "mergedAt": "2023-09-16T14:00:00Z",
+      "deployedAt": "2023-09-17T10:00:00Z"
+    },
+    {
+      "id": "pr4",
+      "developer": "Harsh",
+      "openedAt": "2023-09-20T09:00:00Z",
+      "mergedAt": "2023-09-21T14:00:00Z",
+      "deployedAt": "2023-09-22T10:00:00Z"
+    },
+    {
+      "id": "pr5",
+      "developer": "Harsh",
+      "openedAt": "2023-10-05T09:00:00Z",
+      "mergedAt": "2023-10-06T14:00:00Z",
+      "deployedAt": "2023-10-07T10:00:00Z"
+    },
+    {
+      "id": "pr6",
+      "developer": "Harsh",
+      "openedAt": "2023-10-10T09:00:00Z",
+      "mergedAt": "2023-10-11T14:00:00Z",
+      "deployedAt": "2023-10-12T10:00:00Z"
+    },
+    {
+      "id": "pr7",
+      "developer": "Harsh",
+      "openedAt": "2023-10-15T09:00:00Z",
+      "mergedAt": "2023-10-16T14:00:00Z",
+      "deployedAt": "2023-10-17T10:00:00Z"
+    },
+    {
+      "id": "pr8",
+      "developer": "Harsh",
+      "openedAt": "2023-10-20T09:00:00Z",
+      "mergedAt": "2023-10-21T14:00:00Z",
+      "deployedAt": "2023-10-22T10:00:00Z"
+    },
+    {
+      "id": "pr9",
+      "developer": "Harsh",
+      "openedAt": "2023-11-05T09:00:00Z",
+      "mergedAt": "2023-11-06T14:00:00Z",
+      "deployedAt": "2023-11-07T10:00:00Z"
+    },
+    {
+      "id": "pr10",
+      "developer": "Harsh",
+      "openedAt": "2023-11-10T09:00:00Z",
+      "mergedAt": "2023-11-11T14:00:00Z",
+      "deployedAt": "2023-11-12T10:00:00Z"
+    },
+    {
+      "id": "pr11",
+      "developer": "Harsh",
+      "openedAt": "2023-11-15T09:00:00Z",
+      "mergedAt": "2023-11-16T14:00:00Z",
+      "deployedAt": "2023-11-17T10:00:00Z"
+    },
+    {
+      "id": "pr12",
+      "developer": "Harsh",
+      "openedAt": "2023-11-20T09:00:00Z",
+      "mergedAt": "2023-11-21T14:00:00Z",
+      "deployedAt": "2023-11-22T10:00:00Z"
+    },
+    {
+      "id": "pr13",
+      "developer": "Alex",
+      "openedAt": "2023-09-05T09:00:00Z",
+      "mergedAt": "2023-09-06T14:00:00Z",
+      "deployedAt": "2023-09-07T10:00:00Z"
+    },
+    {
+      "id": "pr14",
+      "developer": "Alex",
+      "openedAt": "2023-09-10T09:00:00Z",
+      "mergedAt": "2023-09-11T14:00:00Z",
+      "deployedAt": "2023-09-12T10:00:00Z"
+    },
+    {
+      "id": "pr15",
+      "developer": "Alex",
+      "openedAt": "2023-09-15T09:00:00Z",
+      "mergedAt": "2023-09-16T14:00:00Z",
+      "deployedAt": "2023-09-17T10:00:00Z"
+    },
+    {
+      "id": "pr16",
+      "developer": "Alex",
+      "openedAt": "2023-09-20T09:00:00Z",
+      "mergedAt": "2023-09-21T14:00:00Z",
+      "deployedAt": "2023-09-22T10:00:00Z"
+    },
+    {
+      "id": "pr17",
+      "developer": "Alex",
+      "openedAt": "2023-10-05T09:00:00Z",
+      "mergedAt": "2023-10-06T14:00:00Z",
+      "deployedAt": "2023-10-07T10:00:00Z"
+    },
+    {
+      "id": "pr18",
+      "developer": "Alex",
+      "openedAt": "2023-10-10T09:00:00Z",
+      "mergedAt": "2023-10-11T14:00:00Z",
+      "deployedAt": "2023-10-12T10:00:00Z"
+    },
+    {
+      "id": "pr19",
+      "developer": "Alex",
+      "openedAt": "2023-10-15T09:00:00Z",
+      "mergedAt": "2023-10-16T14:00:00Z",
+      "deployedAt": "2023-10-17T10:00:00Z"
+    },
+    {
+      "id": "pr20",
+      "developer": "Alex",
+      "openedAt": "2023-10-20T09:00:00Z",
+      "mergedAt": "2023-10-21T14:00:00Z",
+      "deployedAt": "2023-10-22T10:00:00Z"
+    },
+    {
+      "id": "pr21",
+      "developer": "Alex",
+      "openedAt": "2023-11-05T09:00:00Z",
+      "mergedAt": "2023-11-06T14:00:00Z",
+      "deployedAt": "2023-11-07T10:00:00Z"
+    },
+    {
+      "id": "pr22",
+      "developer": "Alex",
+      "openedAt": "2023-11-10T09:00:00Z",
+      "mergedAt": "2023-11-11T14:00:00Z",
+      "deployedAt": "2023-11-12T10:00:00Z"
+    },
+    {
+      "id": "pr23",
+      "developer": "Alex",
+      "openedAt": "2023-11-15T09:00:00Z",
+      "mergedAt": "2023-11-16T14:00:00Z",
+      "deployedAt": "2023-11-17T10:00:00Z"
+    },
+    {
+      "id": "pr24",
+      "developer": "Alex",
+      "openedAt": "2023-11-20T09:00:00Z",
+      "mergedAt": "2023-11-21T14:00:00Z",
+      "deployedAt": "2023-11-22T10:00:00Z"
+    },
+    {
+      "id": "pr25",
+      "developer": "Sam",
+      "openedAt": "2023-09-05T09:00:00Z",
+      "mergedAt": "2023-09-06T14:00:00Z",
+      "deployedAt": "2023-09-07T10:00:00Z"
+    },
+    {
+      "id": "pr26",
+      "developer": "Sam",
+      "openedAt": "2023-09-10T09:00:00Z",
+      "mergedAt": "2023-09-11T14:00:00Z",
+      "deployedAt": "2023-09-12T10:00:00Z"
+    },
+    {
+      "id": "pr27",
+      "developer": "Sam",
+      "openedAt": "2023-09-15T09:00:00Z",
+      "mergedAt": "2023-09-16T14:00:00Z",
+      "deployedAt": "2023-09-17T10:00:00Z"
+    },
+    {
+      "id": "pr28",
+      "developer": "Sam",
+      "openedAt": "2023-09-20T09:00:00Z",
+      "mergedAt": "2023-09-21T14:00:00Z",
+      "deployedAt": "2023-09-22T10:00:00Z"
+    },
+    {
+      "id": "pr29",
+      "developer": "Sam",
+      "openedAt": "2023-10-05T09:00:00Z",
+      "mergedAt": "2023-10-06T14:00:00Z",
+      "deployedAt": "2023-10-07T10:00:00Z"
+    },
+    {
+      "id": "pr30",
+      "developer": "Sam",
+      "openedAt": "2023-10-10T09:00:00Z",
+      "mergedAt": "2023-10-11T14:00:00Z",
+      "deployedAt": "2023-10-12T10:00:00Z"
+    },
+    {
+      "id": "pr31",
+      "developer": "Sam",
+      "openedAt": "2023-10-15T09:00:00Z",
+      "mergedAt": "2023-10-16T14:00:00Z",
+      "deployedAt": "2023-10-17T10:00:00Z"
+    },
+    {
+      "id": "pr32",
+      "developer": "Sam",
+      "openedAt": "2023-10-20T09:00:00Z",
+      "mergedAt": "2023-10-21T14:00:00Z",
+      "deployedAt": "2023-10-22T10:00:00Z"
+    },
+    {
+      "id": "pr33",
+      "developer": "Sam",
+      "openedAt": "2023-11-05T09:00:00Z",
+      "mergedAt": "2023-11-06T14:00:00Z",
+      "deployedAt": "2023-11-07T10:00:00Z"
+    },
+    {
+      "id": "pr34",
+      "developer": "Sam",
+      "openedAt": "2023-11-10T09:00:00Z",
+      "mergedAt": "2023-11-11T14:00:00Z",
+      "deployedAt": "2023-11-12T10:00:00Z"
+    },
+    {
+      "id": "pr35",
+      "developer": "Sam",
+      "openedAt": "2023-11-15T09:00:00Z",
+      "mergedAt": "2023-11-16T14:00:00Z",
+      "deployedAt": "2023-11-17T10:00:00Z"
+    },
+    {
+      "id": "pr36",
+      "developer": "Sam",
+      "openedAt": "2023-11-20T09:00:00Z",
+      "mergedAt": "2023-11-21T14:00:00Z",
+      "deployedAt": "2023-11-22T10:00:00Z"
+    }
   ],
   "issues": [
-    {"id": "iss1", "startedAt": "2023-09-28T09:00:00Z", "completedAt": "2023-10-01T17:00:00Z"},
-    {"id": "iss2", "startedAt": "2023-10-03T10:00:00Z", "completedAt": "2023-10-06T15:00:00Z"},
-    {"id": "iss3", "startedAt": "2023-10-10T11:00:00Z", "completedAt": "2023-10-13T16:00:00Z"},
-    {"id": "iss4", "startedAt": "2023-10-16T09:00:00Z", "completedAt": "2023-10-19T14:00:00Z"}
+    {
+      "id": "iss1",
+      "developer": "Harsh",
+      "startedAt": "2023-09-06T09:00:00Z",
+      "completedAt": "2023-09-08T17:00:00Z"
+    },
+    {
+      "id": "iss2",
+      "developer": "Harsh",
+      "startedAt": "2023-09-12T09:00:00Z",
+      "completedAt": "2023-09-14T17:00:00Z"
+    },
+    {
+      "id": "iss3",
+      "developer": "Harsh",
+      "startedAt": "2023-09-18T09:00:00Z",
+      "completedAt": "2023-09-20T17:00:00Z"
+    },
+    {
+      "id": "iss4",
+      "developer": "Harsh",
+      "startedAt": "2023-09-24T09:00:00Z",
+      "completedAt": "2023-09-26T17:00:00Z"
+    },
+    {
+      "id": "iss5",
+      "developer": "Harsh",
+      "startedAt": "2023-10-06T09:00:00Z",
+      "completedAt": "2023-10-08T17:00:00Z"
+    },
+    {
+      "id": "iss6",
+      "developer": "Harsh",
+      "startedAt": "2023-10-12T09:00:00Z",
+      "completedAt": "2023-10-14T17:00:00Z"
+    },
+    {
+      "id": "iss7",
+      "developer": "Harsh",
+      "startedAt": "2023-10-18T09:00:00Z",
+      "completedAt": "2023-10-20T17:00:00Z"
+    },
+    {
+      "id": "iss8",
+      "developer": "Harsh",
+      "startedAt": "2023-10-24T09:00:00Z",
+      "completedAt": "2023-10-26T17:00:00Z"
+    },
+    {
+      "id": "iss9",
+      "developer": "Harsh",
+      "startedAt": "2023-11-06T09:00:00Z",
+      "completedAt": "2023-11-08T17:00:00Z"
+    },
+    {
+      "id": "iss10",
+      "developer": "Harsh",
+      "startedAt": "2023-11-12T09:00:00Z",
+      "completedAt": "2023-11-14T17:00:00Z"
+    },
+    {
+      "id": "iss11",
+      "developer": "Harsh",
+      "startedAt": "2023-11-18T09:00:00Z",
+      "completedAt": "2023-11-20T17:00:00Z"
+    },
+    {
+      "id": "iss12",
+      "developer": "Harsh",
+      "startedAt": "2023-11-24T09:00:00Z",
+      "completedAt": "2023-11-26T17:00:00Z"
+    },
+    {
+      "id": "iss13",
+      "developer": "Alex",
+      "startedAt": "2023-09-06T09:00:00Z",
+      "completedAt": "2023-09-08T17:00:00Z"
+    },
+    {
+      "id": "iss14",
+      "developer": "Alex",
+      "startedAt": "2023-09-12T09:00:00Z",
+      "completedAt": "2023-09-14T17:00:00Z"
+    },
+    {
+      "id": "iss15",
+      "developer": "Alex",
+      "startedAt": "2023-09-18T09:00:00Z",
+      "completedAt": "2023-09-20T17:00:00Z"
+    },
+    {
+      "id": "iss16",
+      "developer": "Alex",
+      "startedAt": "2023-09-24T09:00:00Z",
+      "completedAt": "2023-09-26T17:00:00Z"
+    },
+    {
+      "id": "iss17",
+      "developer": "Alex",
+      "startedAt": "2023-10-06T09:00:00Z",
+      "completedAt": "2023-10-08T17:00:00Z"
+    },
+    {
+      "id": "iss18",
+      "developer": "Alex",
+      "startedAt": "2023-10-12T09:00:00Z",
+      "completedAt": "2023-10-14T17:00:00Z"
+    },
+    {
+      "id": "iss19",
+      "developer": "Alex",
+      "startedAt": "2023-10-18T09:00:00Z",
+      "completedAt": "2023-10-20T17:00:00Z"
+    },
+    {
+      "id": "iss20",
+      "developer": "Alex",
+      "startedAt": "2023-10-24T09:00:00Z",
+      "completedAt": "2023-10-26T17:00:00Z"
+    },
+    {
+      "id": "iss21",
+      "developer": "Alex",
+      "startedAt": "2023-11-06T09:00:00Z",
+      "completedAt": "2023-11-08T17:00:00Z"
+    },
+    {
+      "id": "iss22",
+      "developer": "Alex",
+      "startedAt": "2023-11-12T09:00:00Z",
+      "completedAt": "2023-11-14T17:00:00Z"
+    },
+    {
+      "id": "iss23",
+      "developer": "Alex",
+      "startedAt": "2023-11-18T09:00:00Z",
+      "completedAt": "2023-11-20T17:00:00Z"
+    },
+    {
+      "id": "iss24",
+      "developer": "Alex",
+      "startedAt": "2023-11-24T09:00:00Z",
+      "completedAt": "2023-11-26T17:00:00Z"
+    },
+    {
+      "id": "iss25",
+      "developer": "Sam",
+      "startedAt": "2023-09-06T09:00:00Z",
+      "completedAt": "2023-09-08T17:00:00Z"
+    },
+    {
+      "id": "iss26",
+      "developer": "Sam",
+      "startedAt": "2023-09-12T09:00:00Z",
+      "completedAt": "2023-09-14T17:00:00Z"
+    },
+    {
+      "id": "iss27",
+      "developer": "Sam",
+      "startedAt": "2023-09-18T09:00:00Z",
+      "completedAt": "2023-09-20T17:00:00Z"
+    },
+    {
+      "id": "iss28",
+      "developer": "Sam",
+      "startedAt": "2023-09-24T09:00:00Z",
+      "completedAt": "2023-09-26T17:00:00Z"
+    },
+    {
+      "id": "iss29",
+      "developer": "Sam",
+      "startedAt": "2023-10-06T09:00:00Z",
+      "completedAt": "2023-10-08T17:00:00Z"
+    },
+    {
+      "id": "iss30",
+      "developer": "Sam",
+      "startedAt": "2023-10-12T09:00:00Z",
+      "completedAt": "2023-10-14T17:00:00Z"
+    },
+    {
+      "id": "iss31",
+      "developer": "Sam",
+      "startedAt": "2023-10-18T09:00:00Z",
+      "completedAt": "2023-10-20T17:00:00Z"
+    },
+    {
+      "id": "iss32",
+      "developer": "Sam",
+      "startedAt": "2023-10-24T09:00:00Z",
+      "completedAt": "2023-10-26T17:00:00Z"
+    },
+    {
+      "id": "iss33",
+      "developer": "Sam",
+      "startedAt": "2023-11-06T09:00:00Z",
+      "completedAt": "2023-11-08T17:00:00Z"
+    },
+    {
+      "id": "iss34",
+      "developer": "Sam",
+      "startedAt": "2023-11-12T09:00:00Z",
+      "completedAt": "2023-11-14T17:00:00Z"
+    },
+    {
+      "id": "iss35",
+      "developer": "Sam",
+      "startedAt": "2023-11-18T09:00:00Z",
+      "completedAt": "2023-11-20T17:00:00Z"
+    },
+    {
+      "id": "iss36",
+      "developer": "Sam",
+      "startedAt": "2023-11-24T09:00:00Z",
+      "completedAt": "2023-11-26T17:00:00Z"
+    }
   ],
   "bugs": [
-    {"id": "bug1", "reportedAt": "2023-10-04T10:00:00Z"},
-    {"id": "bug2", "reportedAt": "2023-10-21T11:00:00Z"}
+    {
+      "id": "bug1",
+      "developer": "Harsh",
+      "reportedAt": "2023-09-12T10:00:00Z"
+    },
+    {
+      "id": "bug2",
+      "developer": "Harsh",
+      "reportedAt": "2023-09-24T10:00:00Z"
+    },
+    {
+      "id": "bug3",
+      "developer": "Harsh",
+      "reportedAt": "2023-10-12T10:00:00Z"
+    },
+    {
+      "id": "bug4",
+      "developer": "Harsh",
+      "reportedAt": "2023-10-24T10:00:00Z"
+    },
+    {
+      "id": "bug5",
+      "developer": "Harsh",
+      "reportedAt": "2023-11-12T10:00:00Z"
+    },
+    {
+      "id": "bug6",
+      "developer": "Harsh",
+      "reportedAt": "2023-11-24T10:00:00Z"
+    },
+    {
+      "id": "bug7",
+      "developer": "Alex",
+      "reportedAt": "2023-09-12T10:00:00Z"
+    },
+    {
+      "id": "bug8",
+      "developer": "Alex",
+      "reportedAt": "2023-09-24T10:00:00Z"
+    },
+    {
+      "id": "bug9",
+      "developer": "Alex",
+      "reportedAt": "2023-10-12T10:00:00Z"
+    },
+    {
+      "id": "bug10",
+      "developer": "Alex",
+      "reportedAt": "2023-10-24T10:00:00Z"
+    },
+    {
+      "id": "bug11",
+      "developer": "Alex",
+      "reportedAt": "2023-11-12T10:00:00Z"
+    },
+    {
+      "id": "bug12",
+      "developer": "Alex",
+      "reportedAt": "2023-11-24T10:00:00Z"
+    },
+    {
+      "id": "bug13",
+      "developer": "Sam",
+      "reportedAt": "2023-09-12T10:00:00Z"
+    },
+    {
+      "id": "bug14",
+      "developer": "Sam",
+      "reportedAt": "2023-09-24T10:00:00Z"
+    },
+    {
+      "id": "bug15",
+      "developer": "Sam",
+      "reportedAt": "2023-10-12T10:00:00Z"
+    },
+    {
+      "id": "bug16",
+      "developer": "Sam",
+      "reportedAt": "2023-10-24T10:00:00Z"
+    },
+    {
+      "id": "bug17",
+      "developer": "Sam",
+      "reportedAt": "2023-11-12T10:00:00Z"
+    },
+    {
+      "id": "bug18",
+      "developer": "Sam",
+      "reportedAt": "2023-11-24T10:00:00Z"
+    }
   ]
 }

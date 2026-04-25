@@ -1,5 +1,21 @@
-export const calculateMetrics = (data) => {
-    const { deployments, prs, issues, bugs } = data;
+export const calculateMetrics = (data, targetDeveloper, targetMonth) => {
+    let { deployments, prs, issues, bugs } = data;
+
+    // Filter by developer
+    if (targetDeveloper && targetDeveloper !== 'All') {
+        deployments = deployments.filter(d => d.developer === targetDeveloper);
+        prs = prs.filter(pr => pr.developer === targetDeveloper);
+        issues = issues.filter(iss => iss.developer === targetDeveloper);
+        bugs = bugs.filter(bug => bug.developer === targetDeveloper);
+    }
+
+    // Filter by month (YYYY-MM). Important: filter based on specific timestamp fields as requested.
+    if (targetMonth && targetMonth !== 'All') {
+        deployments = deployments.filter(d => d.timestamp && d.timestamp.startsWith(targetMonth));
+        prs = prs.filter(pr => pr.mergedAt && pr.mergedAt.startsWith(targetMonth));
+        issues = issues.filter(iss => iss.completedAt && iss.completedAt.startsWith(targetMonth));
+        bugs = bugs.filter(bug => bug.reportedAt && bug.reportedAt.startsWith(targetMonth));
+    }
 
     // 1. Lead Time for Changes: PR opened -> successful production deployment
     let leadTimeDays = 0;
@@ -42,8 +58,8 @@ export const calculateMetrics = (data) => {
             title: 'Lead Time for Changes',
             value: `${leadTimeDays.toFixed(1)} days`,
             interpretation: leadTimeDays > 3 
-                ? "Code is taking too long to go from creation to production." 
-                : "Excellent flow; code moves quickly from development to users.",
+                ? `Code changes are taking an average of ${leadTimeDays.toFixed(1)} days to reach production, which indicates friction in the delivery pipeline. This delay often points to long queue times during the PR review process or manual, slow CI/CD steps. Reducing this time will help deliver value to users much faster and reduce merge conflicts.` 
+                : `Your code changes are flowing into production in just ${leadTimeDays.toFixed(1)} days, showcasing an excellent, smooth delivery pipeline. This rapid turnaround means you are delivering continuous value and getting fast feedback from users. Keep leaning into small, frequent commits to maintain this momentum.`,
             nextStep: leadTimeDays > 3 
                 ? "Investigate CI/CD pipeline bottlenecks or reduce PR review queue times." 
                 : "Maintain current continuous delivery practices."
@@ -53,8 +69,8 @@ export const calculateMetrics = (data) => {
             title: 'Cycle Time',
             value: `${cycleTimeDays.toFixed(1)} days`,
             interpretation: cycleTimeDays > 5 
-                ? "Tasks are remaining 'In Progress' for an extended period." 
-                : "Tasks are being resolved at a healthy, predictable pace.",
+                ? `Tasks are sitting in the 'In Progress' state for over 5 days on average. This typically happens when requirements are unclear, tasks are too large, or developers are dealing with frequent context switching. Breaking these features into smaller, independently testable slices will help restore a healthy development velocity.` 
+                : `Tasks are moving from 'In Progress' to 'Done' at a very healthy pace of ${cycleTimeDays.toFixed(1)} days. This consistent velocity suggests that issues are well-scoped and the development workflow is free of major blockers. It provides a highly predictable foundation for future sprint planning.`,
             nextStep: cycleTimeDays > 5 
                 ? "Break down Jira issues into smaller, more manageable chunks." 
                 : "Use this reliable velocity for better sprint planning."
@@ -64,8 +80,8 @@ export const calculateMetrics = (data) => {
             title: 'Bug Rate',
             value: `${bugRate.toFixed(1)}%`,
             interpretation: bugRate > 15 
-                ? "Quality is slipping; too many issues result in escaped defects." 
-                : "High release quality with very few escaped defects.",
+                ? `The defect escape rate has reached ${bugRate.toFixed(1)}%, indicating that a significant portion of completed work is resulting in production issues. This suggests that the current testing strategies—whether automated or manual—are failing to catch edge cases before release. A concerted effort to bolster automated test coverage is needed to restore confidence in the release process.` 
+                : `A bug rate of ${bugRate.toFixed(1)}% highlights a strong culture of quality and meticulous code review. Very few defects are slipping through the cracks into the production environment. This high release quality protects the user experience and minimizes time spent on urgent hotfixes.`,
             nextStep: bugRate > 15 
                 ? "Increase automated test coverage and mandate stricter code reviews." 
                 : "Share quality practices with other teams."
@@ -73,10 +89,10 @@ export const calculateMetrics = (data) => {
         {
             id: 'deployment-freq',
             title: 'Deployment Frequency',
-            value: `${successfulDeployments} / month`,
+            value: `${successfulDeployments}`,
             interpretation: successfulDeployments < 4 
-                ? "Deployments are infrequent, increasing the risk of each release." 
-                : "Frequent deployments demonstrate a mature continuous delivery capability.",
+                ? `With only ${successfulDeployments} successful deployments in this timeframe, the team is likely batching large amounts of work into risky, infrequent releases. This "big bang" approach increases the likelihood of production outages and makes debugging significantly harder. Moving towards smaller, more frequent releases will reduce overall deployment risk.` 
+                : `Achieving ${successfulDeployments} deployments in this timeframe demonstrates a highly mature continuous delivery capability. By releasing smaller increments frequently, you are drastically reducing the risk associated with any single deployment. This approach also ensures that features and bug fixes reach users as quickly as possible.`,
             nextStep: successfulDeployments < 4 
                 ? "Automate manual deployment steps to enable on-demand releases." 
                 : "Monitor infrastructure costs to optimize the deployment pipeline."
@@ -84,10 +100,10 @@ export const calculateMetrics = (data) => {
         {
             id: 'pr-throughput',
             title: 'PR Throughput',
-            value: `${mergedPRs} PRs`,
+            value: `${mergedPRs}`,
             interpretation: mergedPRs < 10 
-                ? "Low throughput could indicate blocked developers or overly large PRs." 
-                : "High throughput indicates active development and unblocked teams.",
+                ? `A throughput of just ${mergedPRs} merged PRs indicates that code isn't moving efficiently through the review phase. Developers might be blocked waiting on feedback, or the pull requests themselves might be too large and intimidating to review quickly. Fostering a culture of smaller PRs and prompt peer reviews will help unblock the flow of work.` 
+                : `A high throughput of ${mergedPRs} merged PRs is a strong indicator of active, unblocked development. The team is successfully collaborating and reviewing code without letting it pile up in the queue. It is important to monitor that this high volume doesn't come at the cost of diminished code review quality.`,
             nextStep: mergedPRs < 10 
                 ? "Encourage smaller PRs and allocate dedicated time for peer reviews." 
                 : "Ensure high PR volume isn't degrading review quality."
