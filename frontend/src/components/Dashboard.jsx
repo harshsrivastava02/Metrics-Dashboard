@@ -121,6 +121,29 @@ export default function Dashboard() {
         </div>
       </div>
 
+      {/* IC Profile Card */}
+      {selectedDeveloper && (
+        <div className="bg-surface border border-slate-700/50 rounded-2xl p-6 mb-12 flex items-center justify-between shadow-lg shadow-black/20 animate-in fade-in slide-in-from-bottom-2">
+          <div className="flex items-center gap-6">
+            <img 
+              src={`https://ui-avatars.com/api/?name=${selectedDeveloper}&background=random&color=fff&size=80`} 
+              alt={`${selectedDeveloper} Avatar`} 
+              className="w-20 h-20 rounded-full border-4 border-slate-800 shadow-md"
+            />
+            <div>
+              <h2 className="text-2xl font-bold text-white">{selectedDeveloper}</h2>
+              <p className="text-primary font-medium tracking-wide">
+                {selectedDeveloper === 'Harsh' ? 'Senior Engineer' : selectedDeveloper === 'Alex' ? 'Software Engineer' : selectedDeveloper === 'Sam' ? 'Junior Engineer' : 'Engineer'}
+              </p>
+              <div className="mt-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 mr-1.5"></span>
+                Individual Contributor Metrics
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-300 ${loading ? 'opacity-50' : 'opacity-100'}`}>
         {metrics.map((metric, index) => (
           <div key={metric.id} className="animate-in fade-in slide-in-from-bottom-4" style={{ animationDelay: `${index * 100}ms` }}>
