@@ -69,7 +69,7 @@ Node.js v18+
 npm
 
 1. Clone the repository
-bashgit clone https://github.com/YOUR_USERNAME/dev-metrics-mvp.git
+bashgit clone https://github.com/harshsrivastava02/dev-metrics-mvp.git
 cd dev-metrics-mvp
 2. Start the Backend
 bashcd backend
